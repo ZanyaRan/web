@@ -409,6 +409,12 @@ footer {
         width: auto;
     }
 
+    .community h2 {
+        font-weight: 800;
+        font-size: 71px;
+        line-height: 110%;
+    }
+
     .community-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -439,10 +445,6 @@ footer {
 
 
 @media screen and (max-width: 540px) {
-    body {
-        width: 100%;
-    }
-
     nav:has(.menu-toggle:checked) {
         background: #ffffff;
     }
@@ -504,18 +506,14 @@ footer {
     }
 
     h1 {
-        font-weight: 800;
         font-size: 37px;
         line-height: 80%;
-        letter-spacing: -0.05em;
-        align-self: stretch;
-        flex-grow: 0;
     }
 
     .hero {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto;
         grid-template-areas:
             "area1"
             "area2"
@@ -525,7 +523,7 @@ footer {
     }
 
     .hero-item-image img {
-        height: 100%
+        width: 100%;
     }
 
     .hero-item-card h3 {
@@ -544,8 +542,7 @@ footer {
 
     .community-info-image img {
         object-fit: cover;
-        height: 100%;
-        width: 100%;
+        max-width: 100%;
     }
 
     .community h2 {
