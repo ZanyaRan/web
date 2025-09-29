@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.2s 0.1s ease;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: 'Anek Tamil';
+    font-weight: 800;
+    font-size: 116px;
+    text-transform: uppercase;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+}
+
+.blue-headline {
+    color: #808DFD;
+}
+
+body {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+
+}
+
+header h1 {
+    padding: 20px;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Instrument Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: #E9ECFF;
+    border-bottom: 1px solid #000000;
+    position: sticky;
+    /* top: 0; */
+    /* z-index: 1000; */
+
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    /* gap: 60px; */
+    justify-content: space-between;
+    font-family: 'Geist Mono';
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 366px;
+}
+
+button {
+    padding: 12px 17px;
+    background: #808CFD;
+    border: none;
+    border-radius: 7.24613px;
+    font-family: 'Geist Mono';
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s 0.1s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+/* Стили для мобильного меню */
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.menu-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Иконка плюса (по умолчанию) */
+.menu-icon-plus {
+    display: block;
+}
+
+/* Иконка минуса (скрыта по умолчанию) */
+.menu-icon-minus {
+    display: none;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "area1 area1 area2"
+        "area3 area4 area5";
+    align-items: start;
+}
+
+
+.hero-item {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+
+
+.hero-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.hero-item-card {
+    background: #E9ECFF;
+    padding: 20px;
+    height: 100%;
+}
+
+.hero-item-card h3 {
+    font-family: 'Anek Tamil';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 91%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 243px;
+}
+
+.hero-item-first-card h3 {
+    margin-bottom: 163px;
+}
+
+.hero-item-first-card p {
+    margin-bottom: 32px;
+}
+
+.hero-item-card p {
+    font-family: 'Geist';
+    font-size: 17px;
+    letter-spacing: 0.01em;
+}
+
+.hero-item-card a {
+    font-family: 'Geist Mono';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-left: 17px;
+}
+
+.community h2 {
+    font-family: 'Anek Tamil';
+    font-weight: 800;
+    font-size: 116px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.community-info___item h3 {
+    font-family: 'Anek Tamil';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 91%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.community-info {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "community-grid-text community-grid-image";
+}
+
+
+
+
+.community-info-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    background: #E9ECFF;
+}
+
+.community-info___item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.community-info___item:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.community-info-image {
+    padding: 0;
+    overflow: hidden;
+}
+
+.community-info-image img {
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.community-info___item h4 {
+    font-family: 'Anek Tamil';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 91%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.community-info___item p {
+    font-family: 'Geist';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 131%;
+    letter-spacing: 0.01em;
+}
+
+.community-info___item a {
+    font-family: 'Geist Mono';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.community-info-image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.cta {
+    background: #808CFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    gap: 18px;
+}
+
+.cta p {
+font-family: 'Geist';
+font-weight: 400;
+font-size: 17px;
+letter-spacing: 0.01em;
+}
+
+.cta h3 {
+font-family: 'Anek Tamil';
+font-weight: 700;
+font-size: 57px;
+text-align: center;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+}
+
+.cta button {
+background: #E9ECFF;
+}
+.cta button:hover {
+    background: black;
+    color: white;
+}
+
+footer {
+    padding: 27px 20px;
+    background: #E9ECFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 169px;
+
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo img {
+    max-width: 229px;
+    width: 100%;
+}
+
+.footer__logo span {
+font-family: 'Instrument Sans';
+font-weight: 700;
+font-size: 52.4323px;
+line-height: 110%;
+letter-spacing: -0.05em;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info-text-item h4 {
+font-family: 'Anek Tamil';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 131%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.footer__info-text-item p {
+
+font-family: 'Geist';
+font-weight: 700;
+font-size: 14px;
+line-height: 131%;
+letter-spacing: 0.01em;
+
+}
+.footer__info-text-item-time {
+    display: flex;
+    min-width: 270px;
+    justify-content: space-between;
+}
+
+.footer__info-text-item a {
+font-family: 'Geist';
+font-weight: 700;
+font-size: 14px;
+line-height: 131%;
+letter-spacing: 0.01em;
+text-decoration-line: underline;
+
+}
+
+.footer__social-links {
+    display: flex;
+    flex-direction: column;
+
+}
+/* media */
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 71px;
+    }
+
+    .hero-item-card {
+        padding-bottom: 40px;
+    }
+
+    .hero-item-card h3 {
+        margin-bottom: 48px;
+    }
+
+    .hero-item-first-card h3 {
+        margin-bottom: 6px;
+    }
+
+
+    .community-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "community-grid-text community-grid-image";
+
+    }
+
+    .community-info___item h3 {
+        font-family: 'Anek Tamil';
+        font-weight: 700;
+        line-height: 91%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+
+    .community-info___item h4 {
+        font-family: 'Anek Tamil';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 91%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    nav:has(.menu-toggle:checked) {
+        background: #ffffff;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #E9ECFF;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        /* z-index: 999; */
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+    .header-links a {
+        width: 100%;
+        padding: 26px;
+        text-align: left;
+        border-bottom: 1px solid #000000;
+        /* display: block; */
+    }
+
+    .header-links button {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        border-bottom: 1px solid #000000;
+        font-weight: 400;
+        font-size: 30px;
+        color: #FFFFFF;
+        height: 73px;
+    }
+
+    .menu-toggle:checked+.menu-button .menu-icon-plus {
+        display: none;
+    }
+
+    .menu-toggle:checked+.menu-button .menu-icon-minus {
+        display: block;
+    }
+
+    .menu-toggle:checked~.header-links {
+        max-height: 375px;
+        background: #ffffff;
+    }
+
+    .header-links a:first-child {
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 37px;
+        line-height: 80%;
+        /* or 30px */
+        letter-spacing: -0.05em;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area5"
+            "area3"
+            "area4";
+    }
+
+    .hero-item-card h3 {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+
+    .community-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "community-grid-image"
+            "community-grid-text";
+
+    }
+
+    .community-info-image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .community h2 {
+        font-size: 37px;
+        line-height: 80%;
+    }
+
+
+    .footer__logo, .footer__info {
+        flex-direction: column;
+        
+    }
+    footer {
+        gap: 80px;
+    }
+
+    .footer__info {
+        gap: 40px;
+    }
+    .footer__logo {
+        gap: 28px;
+    }
+    .footer__logo img {
+    max-width: 150px;
+    width: 100%;
+}
+.footer__info-text-item-time {
+    max-width: 270px;
+}
+
+}
