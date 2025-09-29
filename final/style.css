@@ -30,11 +30,8 @@ h1 {
 }
 
 body {
-    width: 95%;
     max-width: 1280px;
     margin: 0 auto;
-
-
 }
 
 header h1 {
@@ -51,6 +48,7 @@ header h1 {
     line-height: 110%;
     letter-spacing: -0.05em;
     color: #000000;
+    opacity: unset;
 }
 
 nav {
@@ -61,15 +59,11 @@ nav {
     background: #E9ECFF;
     border-bottom: 1px solid #000000;
     position: sticky;
-    /* top: 0; */
-    /* z-index: 1000; */
-
 }
 
 .header-links {
     display: flex;
     align-items: center;
-    /* gap: 60px; */
     justify-content: space-between;
     font-family: 'Geist Mono';
     font-weight: 400;
@@ -96,7 +90,6 @@ button:hover {
     color: #FFFFFF;
 }
 
-/* Стили для мобильного меню */
 .menu-toggle {
     display: none;
 }
@@ -136,19 +129,15 @@ button:hover {
     align-items: start;
 }
 
-
 .hero-item {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     min-height: 0;
+    overflow: hidden;
 }
 
-
-
 .hero-item img {
-    width: 100%;
-    height: auto;
     display: block;
     object-fit: cover;
 }
@@ -227,9 +216,6 @@ button:hover {
         "community-grid-text community-grid-image";
 }
 
-
-
-
 .community-info-text {
     width: 100%;
     display: flex;
@@ -305,24 +291,25 @@ button:hover {
 }
 
 .cta p {
-font-family: 'Geist';
-font-weight: 400;
-font-size: 17px;
-letter-spacing: 0.01em;
+    font-family: 'Geist';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.01em;
 }
 
 .cta h3 {
-font-family: 'Anek Tamil';
-font-weight: 700;
-font-size: 57px;
-text-align: center;
-letter-spacing: -0.05em;
-text-transform: uppercase;
+    font-family: 'Anek Tamil';
+    font-weight: 700;
+    font-size: 57px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
 }
 
 .cta button {
-background: #E9ECFF;
+    background: #E9ECFF;
 }
+
 .cta button:hover {
     background: black;
     color: white;
@@ -335,24 +322,24 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 169px;
-
 }
 
 .footer__logo {
     display: flex;
     justify-content: space-between;
 }
+
 .footer__logo img {
     max-width: 229px;
     width: 100%;
 }
 
 .footer__logo span {
-font-family: 'Instrument Sans';
-font-weight: 700;
-font-size: 52.4323px;
-line-height: 110%;
-letter-spacing: -0.05em;
+    font-family: 'Instrument Sans';
+    font-weight: 700;
+    font-size: 52.4323px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
 }
 
 .footer__info {
@@ -361,25 +348,24 @@ letter-spacing: -0.05em;
 }
 
 .footer__info-text-item h4 {
-font-family: 'Anek Tamil';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 131%;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-margin-bottom: 15px;
+    font-family: 'Anek Tamil';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .footer__info-text-item p {
-
-font-family: 'Geist';
-font-weight: 700;
-font-size: 14px;
-line-height: 131%;
-letter-spacing: 0.01em;
-
+    font-family: 'Geist';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 131%;
+    letter-spacing: 0.01em;
 }
+
 .footer__info-text-item-time {
     display: flex;
     min-width: 270px;
@@ -387,22 +373,20 @@ letter-spacing: 0.01em;
 }
 
 .footer__info-text-item a {
-font-family: 'Geist';
-font-weight: 700;
-font-size: 14px;
-line-height: 131%;
-letter-spacing: 0.01em;
-text-decoration-line: underline;
-
+    font-family: 'Geist';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 131%;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
 }
 
 .footer__social-links {
     display: flex;
     flex-direction: column;
-
 }
-/* media */
 
+/* media */
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 71px;
@@ -420,6 +404,10 @@ text-decoration-line: underline;
         margin-bottom: 6px;
     }
 
+    .hero-item-image img {
+        max-height: 400px;
+        width: auto;
+    }
 
     .community-info {
         display: grid;
@@ -427,7 +415,6 @@ text-decoration-line: underline;
         grid-template-rows: auto;
         grid-template-areas:
             "community-grid-text community-grid-image";
-
     }
 
     .community-info___item h3 {
@@ -448,14 +435,10 @@ text-decoration-line: underline;
         text-transform: uppercase;
         margin-bottom: 6px;
     }
-
-    
-
-
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
     body {
         width: 100%;
     }
@@ -481,7 +464,6 @@ text-decoration-line: underline;
         overflow: hidden;
         transition: max-height 0.3s ease;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        /* z-index: 999; */
         font-size: 30px;
         line-height: 110%;
     }
@@ -491,7 +473,6 @@ text-decoration-line: underline;
         padding: 26px;
         text-align: left;
         border-bottom: 1px solid #000000;
-        /* display: block; */
     }
 
     .header-links button {
@@ -526,12 +507,10 @@ text-decoration-line: underline;
         font-weight: 800;
         font-size: 37px;
         line-height: 80%;
-        /* or 30px */
         letter-spacing: -0.05em;
         align-self: stretch;
         flex-grow: 0;
     }
-
 
     .hero {
         display: grid;
@@ -543,6 +522,10 @@ text-decoration-line: underline;
             "area5"
             "area3"
             "area4";
+    }
+
+    .hero-item-image img {
+        height: 100%
     }
 
     .hero-item-card h3 {
@@ -557,7 +540,6 @@ text-decoration-line: underline;
         grid-template-areas:
             "community-grid-image"
             "community-grid-text";
-
     }
 
     .community-info-image img {
@@ -571,11 +553,11 @@ text-decoration-line: underline;
         line-height: 80%;
     }
 
-
-    .footer__logo, .footer__info {
+    .footer__logo,
+    .footer__info {
         flex-direction: column;
-        
     }
+
     footer {
         gap: 80px;
     }
@@ -583,15 +565,17 @@ text-decoration-line: underline;
     .footer__info {
         gap: 40px;
     }
+
     .footer__logo {
         gap: 28px;
     }
-    .footer__logo img {
-    max-width: 150px;
-    width: 100%;
-}
-.footer__info-text-item-time {
-    max-width: 270px;
-}
 
+    .footer__logo img {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    .footer__info-text-item-time {
+        max-width: 270px;
+    }
 }
